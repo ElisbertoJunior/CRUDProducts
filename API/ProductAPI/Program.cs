@@ -2,6 +2,11 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using ProductAPI.Database;
+using ProductAPI.Repositories;
+using ProductAPI.Repositories.Interfaces;
+using ProductAPI.Services;
+using ProductAPI.Services.Interfaces;
 using Serilog;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
@@ -13,6 +18,13 @@ namespace ProductAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Registra a string de conexão
+            builder.Services.AddSingleton(sp =>
+            {
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                return configuration.GetConnectionString("DefaultConnection");
+            });
 
             // Configurando Serilog
             Log.Logger = new LoggerConfiguration()
@@ -28,6 +40,9 @@ namespace ProductAPI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            
+
 
             builder.Services.AddCors(options =>
             {
@@ -69,9 +84,47 @@ namespace ProductAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Products.api", Version = "v1" });
             });
 
+            // Injeção de dependência para os repositórios
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+
+            // Injeção de dependência para os serviços
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+
+            
+
+            builder.Services.AddSingleton(sp =>
+            {
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                return configuration.GetConnectionString("DefaultConnection");
+            });
+
+            builder.Services.AddScoped<IProductRepository>(sp =>
+            {
+                var connectionString = sp.GetRequiredService<string>();
+                return new ProductRepository(connectionString);
+            });
+
+            builder.Services.AddScoped<IDepartmentRepository>(sp =>
+            {
+                var connectionString = sp.GetRequiredService<string>();
+                return new DepartmentRepository(connectionString);
+            });
+
+
+
+            /// Adiciona o DatabaseInitializer
+            builder.Services.AddSingleton(sp =>
+            {
+                var connectionString = sp.GetRequiredService<string>();
+                var logger = sp.GetRequiredService<ILogger<DatabaseInitializer>>();
+                return new DatabaseInitializer(connectionString, logger);
+            });
+
+
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
            
             app.UseSwagger();
             app.UseSwaggerUI();
@@ -92,6 +145,16 @@ namespace ProductAPI
             Log.Information("****************************************");
             Log.Information("*    Aplicação iniciada com sucesso!   *");
             Log.Information("****************************************");
+
+            try
+            {
+                var dbInitializer = app.Services.GetRequiredService<DatabaseInitializer>();
+                dbInitializer.Initialize();
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Erro ao inicializar o banco de dados.");
+            }
 
 
             app.UseCors("ProductPolice");
