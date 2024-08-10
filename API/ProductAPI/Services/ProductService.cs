@@ -20,7 +20,13 @@ namespace ProductAPI.Services
 
         public void DeleteById(int id)
         {
-            _repository.DeleteById(id);
+            var product = _repository.GetById(id);
+            if (product != null)
+            {
+                product.IsDeleted = true;
+                _repository.DeleteById(id); 
+            }
+
         }
 
         public IEnumerable<Product> GetAll()
@@ -30,6 +36,7 @@ namespace ProductAPI.Services
 
         public Product GetById(int id)
         {
+
             return _repository.GetById(id);
         }
 

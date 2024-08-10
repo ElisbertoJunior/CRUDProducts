@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductAPI.Models;
+using ProductAPI.Models.DTOs;
 using ProductAPI.Services.Interfaces;
 
 namespace ProductAPI.Controllers
@@ -35,24 +36,44 @@ namespace ProductAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Product product)
+        public IActionResult Post([FromBody] ProductDTO productDTO)
         {
-            _productService.Update(product);
-            return CreatedAtAction(nameof(Get), new { id = product.Id }, product);
+            if (productDTO == null)
+            {
+                return BadRequest("Product is null");
+            }
+
+            var product = new Product
+            {
+                Code = productDTO.Code,
+                Description = productDTO.Description,
+                Price = productDTO.Price,
+                Status = productDTO.Status,
+                DepartmentId = productDTO.DepartmentId
+            };
+
+            _productService.Add(product);
+            return Created("", productDTO);
         }
 
-        [HttpPut("id")]
-        public IActionResult Update(int id, [FromBody] Product product) 
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] ProductUpdateDTO productDTO)
         {
-            if (id != product.Id)
-                return BadRequest();
 
+            // Recupera o produto existente com base no ID
             var existingProduct = _productService.GetById(id);
             if (existingProduct == null)
                 return NotFound();
 
-            
-            _productService.DeleteById(id);
+            // Mapeando o DTO para a entidade Product
+            existingProduct.Code = productDTO.Code;
+            existingProduct.Description = productDTO.Description;
+            existingProduct.Price = productDTO.Price;
+            existingProduct.Status = productDTO.Status;
+            existingProduct.DepartmentId = productDTO.DepartmentId;
+
+            // Atualiza o produto
+            _productService.Update(existingProduct);
             return NoContent();
         }
 

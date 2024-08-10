@@ -16,7 +16,7 @@ namespace ProductAPI.Models
 
         // Chave estrangeira para Departemnt
         // Este campo será ignorado na serialização para JSON
-        [JsonIgnore] 
+        [JsonIgnore]
         public int DepartmentId { get; set; }
 
         public Department Department { get; set; }

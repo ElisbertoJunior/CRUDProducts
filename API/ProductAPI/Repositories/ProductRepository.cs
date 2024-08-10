@@ -70,7 +70,14 @@ namespace ProductAPI.Repositories
             {
                 connection.Open();
 
-                var query = "SELECT * FROM Product WHERE Id = @Id AND IsDeleted = FALSE";
+                var query = @"
+                   SELECT p.Id AS ProductId, p.Code AS ProductCode, p.Description AS ProductDescription, 
+                   p.Price, p.Status, p.IsDeleted,
+                   d.Id AS DepartmentId, d.Code AS DepartmentCode, d.Description AS DepartmentDescription
+                   FROM Product p
+                   INNER JOIN Department d ON p.DepartmentId = d.Id
+                   WHERE p.Id = @Id AND p.IsDeleted = FALSE";
+
                 using (var command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Id", id);
@@ -80,20 +87,24 @@ namespace ProductAPI.Repositories
                         {
                             product = new Product
                             {
-                                Id = reader.GetInt32("Id"),
-                                Code = reader.GetString("Code"),
-                                Description = reader.GetString("Description"),
+                                Id = reader.GetInt32("ProductId"), 
+                                Code = reader.GetString("ProductCode"), 
+                                Description = reader.GetString("ProductDescription"), 
                                 Price = reader.GetDecimal("Price"),
                                 Status = reader.GetBoolean("Status"),
-                                DepartmentId = reader.GetInt32("DepartmentId"),
+                                DepartmentId = reader.GetInt32("DepartmentId"), 
                                 IsDeleted = reader.GetBoolean("IsDeleted"),
+                                Department = new Department 
+                                {
+                                    Id = reader.GetInt32("DepartmentId"),
+                                    Code = reader.GetString("DepartmentCode"),
+                                    Description = reader.GetString("DepartmentDescription")
+                                }
                             };
                         }
                     }
                 }
             }
-
-          
 
             return product;
         }
@@ -133,6 +144,7 @@ namespace ProductAPI.Repositories
                     command.Parameters.AddWithValue("@Price", product.Price);
                     command.Parameters.AddWithValue("@Status", product.Status);
                     command.Parameters.AddWithValue("@DepartmentId", product.DepartmentId);
+                    command.Parameters.AddWithValue("@Id", product.Id); // Certifique-se de adicionar este parâmetro
                     command.ExecuteNonQuery();
                 }
             }

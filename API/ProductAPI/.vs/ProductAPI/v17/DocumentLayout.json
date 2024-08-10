@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\productapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:productapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,36 +15,39 @@
       "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\models\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:models\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\models\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:models\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74E1D5DB-B7E2-47A0-A656-63E6668F1652}|..\\ProductTests\\ProductTests.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\producttests\\productcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,6 +56,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\services\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:services\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\productapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:productapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4374D3F7-7958-4BC4-9215-C1CB83C174A1}|ProductAPI.csproj|c:\\users\\user\\onedrive\\desktop\\crud produtos\\api\\productapi\\repositories\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +89,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,72 +97,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
+              "Title": "ProductUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\DTOs\\ProductUpdateDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\ProductUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\DTOs\\ProductUpdateDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\ProductUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T04:07:55.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\ProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T03:53:18.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductAPI",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\ProductAPI.csproj",
+              "RelativeDocumentMoniker": "ProductAPI.csproj",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\ProductAPI.csproj",
+              "RelativeToolTip": "ProductAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-10T01:05:55.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductTests\\ProductControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\ProductTests\\ProductControllerTests.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductTests\\ProductControllerTests.cs",
+              "RelativeToolTip": "..\\ProductTests\\ProductControllerTests.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAAAI4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T00:58:08.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Controllers\\DepartmentController.cs",
               "RelativeToolTip": "Controllers\\DepartmentController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T19:33:21.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAqwDIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T17:34:25.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "DepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Services\\DepartmentService.cs",
               "RelativeDocumentMoniker": "Services\\DepartmentService.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Services\\DepartmentService.cs",
               "RelativeToolTip": "Services\\DepartmentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T17:15:32.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T14:06:26.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T04:45:57.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Services\\ProductService.cs",
               "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T17:07:16.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "IDepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Services\\Interfaces\\IDepartmentService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IDepartmentService.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Services\\Interfaces\\IDepartmentService.cs",
               "RelativeToolTip": "Services\\Interfaces\\IDepartmentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T17:01:56.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Services\\Interfaces\\IProductService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IProductService.cs",
@@ -164,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Repositories\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\DepartmentRepository.cs",
@@ -172,25 +261,11 @@
               "RelativeToolTip": "Repositories\\DepartmentRepository.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwCMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T16:52:29.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T16:52:29.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T14:06:26.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "IDepartmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Repositories\\Interfaces\\IDepartmentRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IDepartmentRepository.cs",
@@ -198,12 +273,11 @@
               "RelativeToolTip": "Repositories\\Interfaces\\IDepartmentRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T13:57:33.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T13:57:33.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Repositories\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IProductRepository.cs",
@@ -216,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "DatabaseInitializer.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Database\\DatabaseInitializer.cs",
               "RelativeDocumentMoniker": "Database\\DatabaseInitializer.cs",
@@ -229,46 +303,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "Models\\Department.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\Department.cs",
-              "RelativeToolTip": "Models\\Department.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:31:55.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:24:47.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAhwIYAAAAAAAAA",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAhwJ8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T01:01:18.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -276,12 +324,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-09T00:54:08.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T00:54:08.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "ProductAPI.http",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\ProductAPI.http",
               "RelativeDocumentMoniker": "ProductAPI.http",
@@ -289,12 +336,11 @@
               "RelativeToolTip": "ProductAPI.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-09T00:53:33.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T00:53:33.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CRUD Produtos\\API\\ProductAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
