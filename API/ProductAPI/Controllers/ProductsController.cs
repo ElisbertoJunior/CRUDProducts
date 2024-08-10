@@ -40,7 +40,7 @@ namespace ProductAPI.Controllers
         {
             if (productDTO == null)
             {
-                return BadRequest("Product is null");
+                return BadRequest("Produto esta nulo");
             }
 
             var product = new Product
@@ -53,7 +53,7 @@ namespace ProductAPI.Controllers
             };
 
             _productService.Add(product);
-            return Created("", productDTO);
+            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
         }
 
         [HttpPut("{id}")]

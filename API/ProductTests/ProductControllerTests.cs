@@ -5,6 +5,7 @@ using MySqlX.XDevAPI;
 using Newtonsoft.Json;
 using ProductAPI.Controllers;
 using ProductAPI.Models;
+using ProductAPI.Models.DTOs;
 using ProductAPI.Services.Interfaces;
 using System.Net;
 using System.Runtime.CompilerServices;
@@ -85,9 +86,8 @@ namespace ProductTests
         public void CreateProduct_ReturnsCreated_WhenProductIsValid()
         {
             // Arrange
-            var newProduct = new Product
+            var newProduct = new ProductDTO
             {
-                Id = 3,
                 Code = "003",
                 Description = "Novo Produto",
                 Price = 15.00m,
@@ -113,11 +113,14 @@ namespace ProductTests
         public void UpdateProduct_ReturnsNoContent_WhenProductExists()
         {
             // Arrange
-            var existingProduct = new Product { Id = 1, Code = "001", Description = "Coca-Cola", Price = 5, Status = true };
-            _mockProductService.Setup(service => service.GetById(existingProduct.Id)).Returns(existingProduct);
+            var productId = 1; // ID do produto que será passado pela rota
+            var productDTO = new ProductUpdateDTO { Code = "001", Description = "Coca-Cola", Price = 5, Status = true };
+            var existingProduct = new Product { Id = productId, Code = "001", Description = "Coca-Cola", Price = 5, Status = true, DepartmentId = 1 };
+
+            _mockProductService.Setup(service => service.GetById(productId)).Returns(existingProduct);
 
             // Act
-            var result = _controller.Update(existingProduct.Id, existingProduct);
+            var result = _controller.Update(productId, productDTO);
 
             // Assert
             Assert.IsType<NoContentResult>(result);
@@ -134,7 +137,7 @@ namespace ProductTests
             var existingProductId = 1;
             var existingProduct = new Product { Id = existingProductId, IsDeleted = false };
 
-            // Configure o mock para retornar o produto existente
+            // Configura o mock para retornar o produto existente
             _mockProductService.Setup(service => service.GetById(existingProductId)).Returns(existingProduct);
 
             // Act
@@ -143,10 +146,10 @@ namespace ProductTests
             // Assert
             var noContentResult = Assert.IsType<NoContentResult>(result);
 
-            // Verifique se o método de exclusão foi chamado no serviço
+            // Verifica se o método de exclusão foi chamado no serviço
             _mockProductService.Verify(service => service.DeleteById(existingProductId), Times.Once);
 
-            // Verifique se o produto foi marcado como excluído
+            // Verifica se o produto foi marcado como excluído
             Assert.True(existingProduct.IsDeleted, "O produto não foi marcado como excluído.");
         }
 

@@ -2095,3 +2095,281 @@ System.IndexOutOfRangeException: Could not find specified column in results: Id
 2024-08-10 02:03:31.886 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
 2024-08-10 02:03:31.886 -03:00 [INF] Finished handling request.
 2024-08-10 02:03:31.887 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/Products - 200 null application/json; charset=utf-8 12.0576ms
+2024-08-10 11:01:19.012 -03:00 [INF] ****************************************
+2024-08-10 11:01:19.036 -03:00 [INF] *    Aplicação iniciada com sucesso!   *
+2024-08-10 11:01:19.037 -03:00 [INF] ****************************************
+2024-08-10 11:01:19.867 -03:00 [INF] Banco de dados e tabelas criadas com sucesso.
+2024-08-10 11:01:20.308 -03:00 [INF] Now listening on: https://localhost:7103
+2024-08-10 11:01:20.309 -03:00 [INF] Now listening on: http://localhost:5167
+2024-08-10 11:01:20.310 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 11:01:20.310 -03:00 [INF] Hosting environment: Development
+2024-08-10 11:01:20.311 -03:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\CRUD Produtos\API\ProductAPI
+2024-08-10 11:01:21.491 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:01:21.491 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:01:21.491 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/index.html - null null
+2024-08-10 11:01:21.520 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 32.4589ms
+2024-08-10 11:01:21.582 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.1939ms
+2024-08-10 11:01:21.614 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:01:21.674 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/index.html - 200 null text/html;charset=utf-8 187.6733ms
+2024-08-10 11:01:21.679 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.9739ms
+2024-08-10 11:01:21.724 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:01:21.724 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:01:21.726 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.6006ms
+2024-08-10 11:01:21.767 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.3147ms
+2024-08-10 11:01:21.804 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:01:21.808 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.6016ms
+2024-08-10 11:01:23.321 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:01:23.324 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.2252ms
+2024-08-10 11:01:23.325 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:01:23.329 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.2186ms
+2024-08-10 11:01:23.334 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:01:23.336 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.679ms
+2024-08-10 11:01:23.361 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:01:23.369 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:01:23.372 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.6295ms
+2024-08-10 11:01:23.377 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:01:23.380 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.3066ms
+2024-08-10 11:01:23.387 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.7076ms
+2024-08-10 11:01:23.468 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:01:23.471 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0702ms
+2024-08-10 11:01:23.473 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:01:23.477 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0378ms
+2024-08-10 11:01:23.606 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:01:23.610 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.3822ms
+2024-08-10 11:02:11.411 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/Products - null null
+2024-08-10 11:02:11.418 -03:00 [INF] Handling request: GET /api/Products
+2024-08-10 11:02:11.420 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:02:11.431 -03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:02:11.443 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductAPI.Models.Product, ProductAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 11:02:11.454 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 19.9309ms
+2024-08-10 11:02:11.455 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:02:11.455 -03:00 [INF] Finished handling request.
+2024-08-10 11:02:11.456 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/Products - 200 null application/json; charset=utf-8 44.9419ms
+2024-08-10 11:04:20.902 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:7103/api/Products/3 - application/json 114
+2024-08-10 11:04:20.906 -03:00 [INF] Handling request: PUT /api/Products/3
+2024-08-10 11:04:20.908 -03:00 [INF] CORS policy execution failed.
+2024-08-10 11:04:20.909 -03:00 [INF] Request origin https://localhost:7103 does not have permission to access the resource.
+2024-08-10 11:04:20.910 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Update (ProductAPI)'
+2024-08-10 11:04:20.915 -03:00 [INF] Route matched with {action = "Update", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, System.Object) on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:04:20.964 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-10 11:04:20.965 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Update (ProductAPI) in 49.1929ms
+2024-08-10 11:04:20.966 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Update (ProductAPI)'
+2024-08-10 11:04:20.967 -03:00 [INF] Finished handling request.
+2024-08-10 11:04:20.967 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:7103/api/Products/3 - 400 null text/plain; charset=utf-8 65.2519ms
+2024-08-10 11:05:27.657 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7103/api/Products/3 - application/json 125
+2024-08-10 11:05:27.658 -03:00 [INF] Handling request: PUT /api/Products/3
+2024-08-10 11:05:27.659 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Update (ProductAPI)'
+2024-08-10 11:05:27.660 -03:00 [INF] Route matched with {action = "Update", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, System.Object) on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:05:27.665 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-10 11:05:27.666 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Update (ProductAPI) in 5.9514ms
+2024-08-10 11:05:27.667 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Update (ProductAPI)'
+2024-08-10 11:05:27.668 -03:00 [INF] Finished handling request.
+2024-08-10 11:05:27.668 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7103/api/Products/3 - 400 null text/plain; charset=utf-8 11.6836ms
+2024-08-10 11:13:21.560 -03:00 [INF] ****************************************
+2024-08-10 11:13:21.596 -03:00 [INF] *    Aplicação iniciada com sucesso!   *
+2024-08-10 11:13:21.597 -03:00 [INF] ****************************************
+2024-08-10 11:13:21.900 -03:00 [INF] Banco de dados e tabelas criadas com sucesso.
+2024-08-10 11:13:22.056 -03:00 [INF] Now listening on: https://localhost:7103
+2024-08-10 11:13:22.058 -03:00 [INF] Now listening on: http://localhost:5167
+2024-08-10 11:13:22.058 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 11:13:22.059 -03:00 [INF] Hosting environment: Development
+2024-08-10 11:13:22.059 -03:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\CRUD Produtos\API\ProductAPI
+2024-08-10 11:13:22.411 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/index.html - null null
+2024-08-10 11:13:22.415 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:13:22.434 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 18.0638ms
+2024-08-10 11:13:22.474 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:13:22.503 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.9636ms
+2024-08-10 11:13:22.577 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/index.html - 200 null text/html;charset=utf-8 169.7178ms
+2024-08-10 11:13:22.621 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:13:22.624 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:13:22.624 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:13:22.629 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.9231ms
+2024-08-10 11:13:22.649 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.2148ms
+2024-08-10 11:13:22.709 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.1227ms
+2024-08-10 11:13:22.727 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:13:22.737 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.912ms
+2024-08-10 11:13:25.126 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:13:25.129 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.2583ms
+2024-08-10 11:13:25.131 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:13:25.134 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.6037ms
+2024-08-10 11:13:25.140 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:13:25.143 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.0617ms
+2024-08-10 11:13:25.171 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:13:25.180 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:13:25.183 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.2069ms
+2024-08-10 11:13:25.187 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:13:25.194 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.625ms
+2024-08-10 11:13:25.201 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.7908ms
+2024-08-10 11:13:25.245 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:13:25.249 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.145ms
+2024-08-10 11:13:25.250 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:13:25.255 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.5044ms
+2024-08-10 11:13:25.255 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:13:25.261 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8666ms
+2024-08-10 11:13:26.417 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:13:26.419 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.7796ms
+2024-08-10 11:13:26.454 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:13:26.463 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.6557ms
+2024-08-10 11:13:26.512 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:13:26.517 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.6294ms
+2024-08-10 11:13:38.025 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/Products - null null
+2024-08-10 11:13:38.031 -03:00 [INF] Handling request: GET /api/Products
+2024-08-10 11:13:38.032 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:13:38.041 -03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:13:38.052 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductAPI.Models.Product, ProductAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 11:13:38.062 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 18.7279ms
+2024-08-10 11:13:38.063 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:13:38.064 -03:00 [INF] Finished handling request.
+2024-08-10 11:13:38.065 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/Products - 200 null application/json; charset=utf-8 39.5258ms
+2024-08-10 11:13:47.795 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7103/api/Products/3 - application/json 125
+2024-08-10 11:13:47.797 -03:00 [INF] Handling request: PUT /api/Products/3
+2024-08-10 11:13:47.798 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Update (ProductAPI)'
+2024-08-10 11:13:47.803 -03:00 [INF] Route matched with {action = "Update", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, ProductAPI.Models.DTOs.ProductUpdateDTO) on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:13:47.843 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-08-10 11:13:47.844 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Update (ProductAPI) in 40.0728ms
+2024-08-10 11:13:47.845 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Update (ProductAPI)'
+2024-08-10 11:13:47.845 -03:00 [INF] Finished handling request.
+2024-08-10 11:13:47.847 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7103/api/Products/3 - 204 null null 51.3454ms
+2024-08-10 11:14:03.309 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/Products - null null
+2024-08-10 11:14:03.311 -03:00 [INF] Handling request: GET /api/Products
+2024-08-10 11:14:03.312 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:14:03.312 -03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:14:03.317 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductAPI.Models.Product, ProductAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 11:14:03.318 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 4.3294ms
+2024-08-10 11:14:03.319 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:14:03.319 -03:00 [INF] Finished handling request.
+2024-08-10 11:14:03.320 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/Products - 200 null application/json; charset=utf-8 10.887ms
+2024-08-10 11:19:44.845 -03:00 [INF] ****************************************
+2024-08-10 11:19:44.869 -03:00 [INF] *    Aplicação iniciada com sucesso!   *
+2024-08-10 11:19:44.870 -03:00 [INF] ****************************************
+2024-08-10 11:19:45.156 -03:00 [INF] Banco de dados e tabelas criadas com sucesso.
+2024-08-10 11:19:45.341 -03:00 [INF] Now listening on: https://localhost:7103
+2024-08-10 11:19:45.343 -03:00 [INF] Now listening on: http://localhost:5167
+2024-08-10 11:19:45.343 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 11:19:45.344 -03:00 [INF] Hosting environment: Development
+2024-08-10 11:19:45.344 -03:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\CRUD Produtos\API\ProductAPI
+2024-08-10 11:19:45.903 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/index.html - null null
+2024-08-10 11:19:45.907 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:19:45.926 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 17.6459ms
+2024-08-10 11:19:45.967 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:19:45.995 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.8736ms
+2024-08-10 11:19:46.045 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:19:46.079 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/index.html - 200 null text/html;charset=utf-8 181.2414ms
+2024-08-10 11:19:46.120 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.0995ms
+2024-08-10 11:19:46.131 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:19:46.131 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:19:46.133 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.9089ms
+2024-08-10 11:19:46.147 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.8922ms
+2024-08-10 11:19:46.193 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:19:46.198 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.2479ms
+2024-08-10 11:19:48.455 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:19:48.458 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.3009ms
+2024-08-10 11:19:48.459 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:19:48.463 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.4442ms
+2024-08-10 11:19:48.464 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:19:48.467 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.1952ms
+2024-08-10 11:19:48.500 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:19:48.508 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:19:48.511 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.1535ms
+2024-08-10 11:19:48.518 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:19:48.521 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.363ms
+2024-08-10 11:19:48.530 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.8392ms
+2024-08-10 11:19:48.570 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:19:48.574 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.6425ms
+2024-08-10 11:19:48.575 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:19:48.581 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.1613ms
+2024-08-10 11:19:48.589 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:19:48.593 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.5623ms
+2024-08-10 11:19:49.428 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:19:49.431 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.7029ms
+2024-08-10 11:19:49.467 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:19:49.475 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.0458ms
+2024-08-10 11:19:49.522 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:19:49.526 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0068ms
+2024-08-10 11:19:50.529 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-10 11:19:50.531 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.4239ms
+2024-08-10 11:19:50.568 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2024-08-10 11:19:50.575 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.6041ms
+2024-08-10 11:19:50.626 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2024-08-10 11:19:50.629 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4625ms
+2024-08-10 11:20:40.098 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7103/api/Products - application/json 101
+2024-08-10 11:20:40.106 -03:00 [INF] Handling request: POST /api/Products
+2024-08-10 11:20:40.108 -03:00 [INF] CORS policy execution failed.
+2024-08-10 11:20:40.108 -03:00 [INF] Request origin https://localhost:7103 does not have permission to access the resource.
+2024-08-10 11:20:40.110 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Post (ProductAPI)'
+2024-08-10 11:20:40.120 -03:00 [INF] Route matched with {action = "Post", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ProductAPI.Models.DTOs.ProductDTO) on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:20:40.160 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Models.Product'.
+2024-08-10 11:20:40.176 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Post (ProductAPI) in 53.353ms
+2024-08-10 11:20:40.177 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Post (ProductAPI)'
+2024-08-10 11:20:40.178 -03:00 [INF] Finished handling request.
+2024-08-10 11:20:40.178 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7103/api/Products - 201 null application/json; charset=utf-8 80.2633ms
+2024-08-10 11:21:12.854 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/Products - null null
+2024-08-10 11:21:12.859 -03:00 [INF] Handling request: GET /api/Products
+2024-08-10 11:21:12.860 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:21:12.861 -03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:21:12.869 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductAPI.Models.Product, ProductAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 11:21:12.871 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 8.7365ms
+2024-08-10 11:21:12.872 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:21:12.872 -03:00 [INF] Finished handling request.
+2024-08-10 11:21:12.873 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/Products - 200 null application/json; charset=utf-8 19.3628ms
+2024-08-10 11:39:03.862 -03:00 [INF] ****************************************
+2024-08-10 11:39:03.890 -03:00 [INF] *    Aplicação iniciada com sucesso!   *
+2024-08-10 11:39:03.890 -03:00 [INF] ****************************************
+2024-08-10 11:39:04.062 -03:00 [INF] Banco de dados e tabelas criadas com sucesso.
+2024-08-10 11:39:04.121 -03:00 [INF] Now listening on: http://localhost:5167
+2024-08-10 11:39:04.122 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 11:39:04.123 -03:00 [INF] Hosting environment: Development
+2024-08-10 11:39:04.123 -03:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\CRUD Produtos\API\ProductAPI
+2024-08-10 11:39:26.074 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/ - null null
+2024-08-10 11:39:26.100 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-08-10 11:39:26.102 -03:00 [INF] Handling request: GET /
+2024-08-10 11:39:26.103 -03:00 [INF] Finished handling request.
+2024-08-10 11:39:26.106 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/ - 404 0 null 32.4246ms
+2024-08-10 11:39:26.112 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5167/, Response status code: 404
+2024-08-10 11:40:29.289 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/ - null null
+2024-08-10 11:40:29.291 -03:00 [INF] Handling request: GET /
+2024-08-10 11:40:29.292 -03:00 [INF] Finished handling request.
+2024-08-10 11:40:29.293 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/ - 404 0 null 4.0532ms
+2024-08-10 11:40:29.295 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5167/, Response status code: 404
+2024-08-10 11:40:34.978 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/ - null null
+2024-08-10 11:40:34.981 -03:00 [INF] Handling request: GET /
+2024-08-10 11:40:34.982 -03:00 [INF] Finished handling request.
+2024-08-10 11:40:34.982 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/ - 404 0 null 3.7087ms
+2024-08-10 11:40:34.984 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5167/, Response status code: 404
+2024-08-10 11:40:58.249 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger - null null
+2024-08-10 11:40:58.251 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger - 301 0 null 1.9939ms
+2024-08-10 11:40:58.255 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/index.html - null null
+2024-08-10 11:40:58.302 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/index.html - 200 null text/html;charset=utf-8 47.9473ms
+2024-08-10 11:40:58.308 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/swagger-ui.css - null null
+2024-08-10 11:40:58.308 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/swagger-ui-bundle.js - null null
+2024-08-10 11:40:58.308 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-10 11:40:58.320 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-10 11:40:58.320 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-10 11:40:58.323 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/swagger-ui.css - 200 143943 text/css 14.9333ms
+2024-08-10 11:40:58.323 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 14.7376ms
+2024-08-10 11:40:58.324 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-10 11:40:58.328 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 19.7531ms
+2024-08-10 11:40:58.466 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/v1/swagger.json - null null
+2024-08-10 11:40:58.509 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.8356ms
+2024-08-10 11:40:58.530 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/favicon-32x32.png - null null
+2024-08-10 11:40:58.532 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-08-10 11:40:58.533 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/favicon-32x32.png - 200 628 image/png 2.6426ms
+2024-08-10 11:41:11.877 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/api/Products - null null
+2024-08-10 11:41:11.880 -03:00 [INF] Handling request: GET /api/Products
+2024-08-10 11:41:11.881 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:41:11.887 -03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller ProductAPI.Controllers.ProductsController (ProductAPI).
+2024-08-10 11:41:11.897 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductAPI.Models.Product, ProductAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 11:41:11.907 -03:00 [INF] Executed action ProductAPI.Controllers.ProductsController.Get (ProductAPI) in 17.0995ms
+2024-08-10 11:41:11.908 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.ProductsController.Get (ProductAPI)'
+2024-08-10 11:41:11.909 -03:00 [INF] Finished handling request.
+2024-08-10 11:41:11.909 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/api/Products - 200 null application/json; charset=utf-8 32.3304ms
+2024-08-10 11:41:36.704 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/api/Department - null null
+2024-08-10 11:41:36.706 -03:00 [INF] Handling request: GET /api/Department
+2024-08-10 11:41:36.706 -03:00 [INF] Executing endpoint 'ProductAPI.Controllers.DepartmentController.Get (ProductAPI)'
+2024-08-10 11:41:36.708 -03:00 [INF] Route matched with {action = "Get", controller = "Department"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller ProductAPI.Controllers.DepartmentController (ProductAPI).
+2024-08-10 11:41:36.712 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductAPI.Models.Department, ProductAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 11:41:36.713 -03:00 [INF] Executed action ProductAPI.Controllers.DepartmentController.Get (ProductAPI) in 4.1858ms
+2024-08-10 11:41:36.714 -03:00 [INF] Executed endpoint 'ProductAPI.Controllers.DepartmentController.Get (ProductAPI)'
+2024-08-10 11:41:36.715 -03:00 [INF] Finished handling request.
+2024-08-10 11:41:36.715 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/api/Department - 200 null application/json; charset=utf-8 11.5878ms
+2024-08-10 11:42:15.366 -03:00 [INF] Application is shutting down...

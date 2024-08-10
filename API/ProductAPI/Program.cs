@@ -34,15 +34,10 @@ namespace ProductAPI
 
             builder.Host.UseSerilog();
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
-            
-
 
             builder.Services.AddCors(options =>
             {
@@ -141,7 +136,7 @@ namespace ProductAPI
 
             });
 
-            // Presentation message after application is started
+            // Mensagem de apresentação após iníciar a aplicação
             Log.Information("****************************************");
             Log.Information("*    Aplicação iniciada com sucesso!   *");
             Log.Information("****************************************");
@@ -197,7 +192,7 @@ namespace ProductAPI
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, "ApiKeyUser")
-                // Aqui você pode adicionar outras claims conforme necessário
+                
             };
 
             var identity = new ClaimsIdentity(claims, Scheme.Name);
