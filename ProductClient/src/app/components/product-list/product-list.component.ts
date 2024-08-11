@@ -10,6 +10,7 @@ import { ProductService, Product } from 'src/app/services/product.service';
 export class ProductListComponent implements OnInit {
     products: Product[] = [];
 
+
     constructor(private productService: ProductService) {}
 
     ngOnInit(): void {
@@ -22,10 +23,16 @@ export class ProductListComponent implements OnInit {
       });
     }
 
-    deleteProduct(id: number): void {
-      this.productService.deleteProduct(id).subscribe(() => {
-        // Recarrega a lista após a exclusão
-        this.loadProducts()
-      });
+
+
+    deleteProduct(productId: number): void {
+      const confirmDelete = confirm('Você tem certeza que deseja excluir este produto?');
+      if (confirmDelete) {
+        // Chama o método para excluir o produto
+        this.productService.deleteProduct(productId).subscribe(() => {
+          this.loadProducts();
+        });
+      }
     }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { Department, DepartmentService } from './../../services/department.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService, Product } from 'src/app/services/product.service';
 
@@ -21,25 +22,46 @@ export class ProductFormComponent implements OnInit {
 
     isEditMode: boolean = false;
 
+    departments: Department[] = []
+
     constructor(
       private route: ActivatedRoute,
       private router: Router,
-      private productService: ProductService
+      private productService: ProductService,
+      private departmentService: DepartmentService
     ){}
 
     ngOnInit(): void {
+      this.loadDepartments();
       const id = this.route.snapshot.params['id'];
       if(id) {
           this.isEditMode = true;
           this.productService.getProductById(id).subscribe(product => {
             this.product = product;
+
+            console.log('Loaded product:', this.product);
           });
       }
     }
 
+    loadDepartments(): void {
+      this.departmentService.getDepartments().subscribe(departments => {
+          this.departments = departments;
+      });
+    }
+
     saveProduct(): void {
+      const updatedProduct = {
+        id: this.product.id,
+        code: this.product.code,
+        description: this.product.description,
+        price: this.product.price,
+        status: this.product.status,
+        departmentId: this.product.departmentId || this.product.department?.id
+      };
+
       if(this.isEditMode) {
-        this.productService.updateProduct(this.product.id, this.product).subscribe(() => {
+        this.productService.updateProduct(this.product.id, updatedProduct).subscribe(() => {
           this.router.navigate(['/products']);
         });
       } else {

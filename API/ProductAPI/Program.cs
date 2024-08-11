@@ -19,7 +19,7 @@ namespace ProductAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Registra a string de conexão
+            // Registra a string de conexï¿½o
             builder.Services.AddSingleton(sp =>
             {
                 var configuration = sp.GetRequiredService<IConfiguration>();
@@ -44,7 +44,7 @@ namespace ProductAPI
                 options.AddPolicy("ProductPolice",
                     builder =>
                     {
-                        builder.AllowAnyHeader()
+                        builder.AllowAnyOrigin()
                                .AllowAnyHeader()
                                .AllowAnyMethod();
                     });
@@ -79,11 +79,11 @@ namespace ProductAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Products.api", Version = "v1" });
             });
 
-            // Injeção de dependência para os repositórios
+            // Injeï¿½ï¿½o de dependï¿½ncia para os repositï¿½rios
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
-            // Injeção de dependência para os serviços
+            // Injeï¿½ï¿½o de dependï¿½ncia para os serviï¿½os
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
@@ -136,9 +136,9 @@ namespace ProductAPI
 
             });
 
-            // Mensagem de apresentação após iníciar a aplicação
+            // Mensagem de apresentaï¿½ï¿½o apï¿½s inï¿½ciar a aplicaï¿½ï¿½o
             Log.Information("****************************************");
-            Log.Information("*    Aplicação iniciada com sucesso!   *");
+            Log.Information("*    Aplicaï¿½ï¿½o iniciada com sucesso!   *");
             Log.Information("****************************************");
 
             try
