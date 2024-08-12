@@ -7,7 +7,6 @@ import { ProductService, Product } from 'src/app/services/product.service';
 @Component({
   selector: 'app-product-form',
   templateUrl: './product-form.component.html',
-  styleUrls: ['./product-form.component.scss']
 })
 export class ProductFormComponent implements OnInit {
 
@@ -61,13 +60,13 @@ export class ProductFormComponent implements OnInit {
       };
 
       if(this.isEditMode) {
-        this.productService.updateProduct(this.product.id, updatedProduct).subscribe(() => {
+        this.productService.updateProduct(this.product.id, updatedProduct).subscribe(response => {
           this.router.navigate(['/products']);
-        });
+        },  error => alert(error));
       } else {
         this.productService.createProduct(this.product).subscribe(() => {
           this.router.navigate(['/products']);
-        })
+        }, error => alert(error));
       }
     }
 

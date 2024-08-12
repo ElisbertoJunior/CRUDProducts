@@ -8,6 +8,7 @@ namespace ProductAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class DepartmentController : ControllerBase
     {
         private readonly IDepartmentService _departmentService;
@@ -18,10 +19,13 @@ namespace ProductAPI.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public ActionResult Get()
         {
             var departments = _departmentService.GetAll();
+
+             if (departments == null || !departments.Any())
+                return NotFound("Nenhum departamento encontrado.");
+
             return Ok(departments);
 
         }

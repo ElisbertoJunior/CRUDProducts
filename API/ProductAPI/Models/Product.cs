@@ -14,14 +14,14 @@ namespace ProductAPI.Models
 
         public bool Status { get; set; }
 
-        // Chave estrangeira para Departemnt
-        // Este campo será ignorado na serialização para JSON
+        // Chave estrangeira para o Departamento
+        // Este campo sera ignorado na serialização para JSON
         [JsonIgnore]
         public int DepartmentId { get; set; }
 
         public Department Department { get; set; }
 
-        // Este campo será ignorado na serialização para JSON
+        // Este campo sera ignorado na serializaçao para JSON
         [JsonIgnore] 
         public bool IsDeleted { get; set; }
 

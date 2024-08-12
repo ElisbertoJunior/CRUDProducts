@@ -45,7 +45,7 @@ namespace ProductAPI.Database
                         command.ExecuteNonQuery();
                     }
 
-                    // Insere dados iniciais na tabela Department
+                    // Insere dados iniciais na tabela de Departamento
                     var insertDepartmentsQuery = @"
                         INSERT INTO Department (Code, Description)
                         SELECT '010', 'BEBIDAS' WHERE NOT EXISTS (SELECT 1 FROM Department WHERE Code = '010');
@@ -65,7 +65,7 @@ namespace ProductAPI.Database
                     }
 
 
-                    // Cria a tabela Product com chave estrangeira para o Department
+                    // Cria a tabela de Produto com chave estrangeira para o Departamento
                     var createProductTableQuery = @"
                         CREATE TABLE IF NOT EXISTS Product (
                             Id INT AUTO_INCREMENT PRIMARY KEY,
@@ -83,7 +83,7 @@ namespace ProductAPI.Database
                         command.ExecuteNonQuery();
                     }
 
-                    // Inserir produtos iniciais na tabela Product
+                    // Insere produtos iniciais na tabela de produtos
                     var insertProductsQuery = @"
                     INSERT INTO Product (Code, Description, DepartmentId, Price, Status, IsDeleted)
                     SELECT '001', 'Coca-Cola', 1, 5.00, true, false WHERE NOT EXISTS (SELECT 1 FROM Product WHERE Code = '001');

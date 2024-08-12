@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductAPI.Models;
 using ProductAPI.Models.DTOs;
@@ -23,6 +22,11 @@ namespace ProductAPI.Controllers
         public IActionResult Get()
         {
             var products = _productService.GetAll();
+
+            if (products == null || !products.Any())
+                return NotFound("Nenhum produto encontrado.");
+            
+
             return Ok(products);
         }
 
@@ -40,43 +44,64 @@ namespace ProductAPI.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] ProductDTO productDTO)
         {
-            if (productDTO == null)
+            try 
             {
-                return BadRequest("Produto esta nulo");
+                if (productDTO == null)
+                {
+                    return BadRequest("Produto esta nulo");
+                }
+
+                var product = new Product
+                {
+                    Code = productDTO.Code,
+                    Description = productDTO.Description,
+                    Price = productDTO.Price,
+                    Status = productDTO.Status,
+                    DepartmentId = productDTO.DepartmentId
+                };
+
+                _productService.Add(product);
+                return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+            } 
+            catch (ArgumentException e) 
+            {
+                return BadRequest(e.Message);
+            } catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao criar o produto.");
             }
-
-            var product = new Product
-            {
-                Code = productDTO.Code,
-                Description = productDTO.Description,
-                Price = productDTO.Price,
-                Status = productDTO.Status,
-                DepartmentId = productDTO.DepartmentId
-            };
-
-            _productService.Add(product);
-            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
         }
 
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] ProductUpdateDTO productDTO)
         {
 
-            // Recupera o produto existente com base no ID
-            var existingProduct = _productService.GetById(id);
-            if (existingProduct == null)
-                return NotFound();
+            try 
+            {
+                var existingProduct = _productService.GetById(id);
+                if (existingProduct == null)
+                        return NotFound();
 
-            // Mapeando o DTO para a entidade Product
-            existingProduct.Code = productDTO.Code;
-            existingProduct.Description = productDTO.Description;
-            existingProduct.Price = productDTO.Price;
-            existingProduct.Status = productDTO.Status;
-            existingProduct.DepartmentId = productDTO.DepartmentId;
+                
+                existingProduct.Code = productDTO.Code;
+                existingProduct.Description = productDTO.Description;
+                existingProduct.Price = productDTO.Price;
+                existingProduct.Status = productDTO.Status;
+                existingProduct.DepartmentId = productDTO.DepartmentId;
 
-            // Atualiza o produto
-            _productService.Update(existingProduct);
-            return NoContent();
+                
+                _productService.Update(existingProduct);
+                return NoContent();
+
+            } 
+            catch (ArgumentException e) 
+            {
+                return BadRequest(e.Message);
+            } catch 
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao editar produto.");
+            }
+
         }
 
         [HttpDelete("{id}")]
@@ -85,7 +110,7 @@ namespace ProductAPI.Controllers
             var product = _productService.GetById(id);
 
             if(product == null)
-                return NotFound();
+                return NotFound($"Produto com Id {id} não foi encontrado.");
 
             _productService.DeleteById(id);
             return NoContent();

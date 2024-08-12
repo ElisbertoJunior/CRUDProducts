@@ -17,13 +17,13 @@ describe('ProductService', () => {
     httpMock = TestBed.inject(HttpTestingController);
   });
 
-  // Teste se o serviço foi criado corretamente
-  it('should be created', () => {
+
+  it('deve ser criado', () => {
     expect(service).toBeTruthy();
   });
 
-  // Teste para verificar se getProducts retorna uma lista de produtos
-  it('should retrieve products from the API via GET', () => {
+
+  it('deve recuperar os produtos da api via get', () => {
     const mockProducts: Product[] = [
       { id: 1, code: '001', description: 'Arroz', price: 10, status: true, departmentId: 1 },
       { id: 2, code: '002', description: 'Pepsi', price: 20, status: false, departmentId: 2 }
@@ -39,8 +39,8 @@ describe('ProductService', () => {
     request.flush(mockProducts);
   });
 
-  // Teste para verificar se getProductById retorna um produto especifico
-  it('should retrieve a product by ID from the API via GET', () => {
+
+  it('deve recuperar um produto pelo id da api via get', () => {
     const mockProduct: Product = { id: 1, code: '001', description: 'Arroz', price: 10, status: true, departmentId: 1 };
 
     service.getProductById(1).subscribe(product => {

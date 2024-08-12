@@ -15,6 +15,7 @@ namespace ProductAPI.Services
 
         public void Add(Product product)
         {
+            ValidateProduct(product);
             _repository.Add(product);
         }
 
@@ -42,7 +43,28 @@ namespace ProductAPI.Services
 
         public void Update(Product product)
         {
+            ValidateProduct(product);
             _repository.Update(product);
         }
+
+        private void ValidateProduct(Product product)
+        {
+            if (string.IsNullOrWhiteSpace(product.Code))
+                throw new ArgumentException("Código do produto é obrigatório.");
+
+            if (string.IsNullOrWhiteSpace(product.Description))
+                throw new ArgumentException("Descrição do produto é obrigatória.");
+
+            if (product.Price <= 0)
+                throw new ArgumentException("Preço do produto deve ser maior que zero.");
+
+            if (product.DepartmentId <= 0)
+                throw new ArgumentException("Departamento inválido.");
+       
+        }
     }
+    
 }
+
+    
+

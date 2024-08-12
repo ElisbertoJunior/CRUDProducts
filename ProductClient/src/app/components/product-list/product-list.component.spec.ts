@@ -24,12 +24,12 @@ describe('ProductListComponent', () => {
     productService = TestBed.inject(ProductService) as jasmine.SpyObj<ProductService>;
   });
 
-  // Teste se os produtos sao carregados corretamente ao inicializar o componente
-  it('should create', () => {
+
+  it('deve criar', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should load products on init', () => {
+  it('deve carregar os produtos na inicializaçao', () => {
     const products = [
       { id: 1, code: '001', description: 'Arroz', price: 10, status: true, department: { id: 1, code: '010', description: 'CEREAIS' } },
       { id: 2, code: '002', description: 'Pepsi', price: 20, status: false, department: { id: 2, code: '020', description: 'BEBIDAS' } }
@@ -42,8 +42,8 @@ describe('ProductListComponent', () => {
     expect(productService.getProducts).toHaveBeenCalled();
   });
 
-  // Teste se um produto e excluído e a lista de produtos e recarregada
-  it('should delete product and reload products', () => {
+
+  it('deve excluir o produto e recarregar os produtos', () => {
     const products = [
       { id: 1, code: '001', description: 'Leite', price: 10, status: true, department: { id: 1, code: '010', description: 'LATICINIOS' } },
       { id: 2, code: '002', description: 'Chocolate', price: 20, status: false, department: { id: 2, code: '020', description: 'MERCEARIA' } }

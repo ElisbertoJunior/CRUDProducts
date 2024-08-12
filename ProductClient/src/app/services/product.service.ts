@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 
 export interface Product {
     id: number;
@@ -44,14 +44,32 @@ export class ProductService {
     const headers = new HttpHeaders({
       'ApiKey': `${this.apiKey}`
     })
-    return this.http.post<Product>(this.apiUrl, product, {headers});
+    return this.http.post<Product>(this.apiUrl, product, {headers}).pipe(
+      catchError(error => {
+        let errorMessage = 'Erro desconhecido!';
+        if (error.status != 201) {
+          errorMessage = error.error;
+        }
+        alert(errorMessage);
+        return throwError(errorMessage);
+      })
+    );
   }
 
   updateProduct(id: number, product: Product): Observable<void> {
     const headers = new HttpHeaders({
       'ApiKey': `${this.apiKey}`
     })
-    return this.http.put<void>(`${this.apiUrl}/${id}`, product, {headers});
+    return this.http.put<void>(`${this.apiUrl}/${id}`, product, {headers}).pipe(
+      catchError(error => {
+        let errorMessage = 'Erro desconhecido!';
+        if (error.status != 204) {
+          errorMessage = error.error;
+        }
+        alert(errorMessage);
+        return throwError(errorMessage);
+      })
+    );
   }
 
   deleteProduct(id: number): Observable<void> {

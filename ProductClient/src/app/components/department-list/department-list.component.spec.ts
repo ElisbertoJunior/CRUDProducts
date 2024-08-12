@@ -9,7 +9,7 @@ describe('DepartmentListComponent', () => {
     let departmentService: jasmine.SpyObj<DepartmentService>;
 
     beforeEach(() => {
-       // Cria um objeto espiao para o DepartmentService que simula a funçao getDepartments
+
       const departmentServiceSpy = jasmine.createSpyObj('DepartmentService', ['getDepartments']);
 
       TestBed.configureTestingModule({
@@ -24,25 +24,25 @@ describe('DepartmentListComponent', () => {
       departmentService = TestBed.inject(DepartmentService) as jasmine.SpyObj<DepartmentService>
     });
 
-    // Teste basico para verificar se o componente e criado corretamente
-    it('should create', () => {
+
+    it('deve criar', () => {
       expect(component).toBeTruthy();
     });
 
-    // Teste para verificar se os departamentos sao carregados corretamente no metodo ngOnInit
-    it('should load department on init', () => {
+
+    it('deve carregar o departamento na inicializaçao', () => {
       const departments = [
           { id: 1, code: '010', description: 'LATICIOS' },
           { id: 2, code: '020', description: 'BEBIDAS' }
       ];
-      // Simula o retorno da funçao getDepartments para retornar o array de departamentos
+
       departmentService.getDepartments.and.returnValue(of(departments));
 
       component.ngOnInit();
 
-      // Verifica se a lista de departamentos do componente e igual a que foi retornada pelo serviço
+
       expect(component.departments).toEqual(departments);
-      // Verifica se o metodo getDepartments foi chamado
+
       expect(departmentService.getDepartments).toHaveBeenCalled();
   });
 

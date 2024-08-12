@@ -12,6 +12,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DepartmentListComponent } from './components/department-list/department-list.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { LoginComponent } from './components/login/login.component';
+import { AuthService } from './services/auth-service.service';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { FooterComponent } from './components/footer/footer.component';
     ProductFormComponent,
     NavbarComponent,
     DepartmentListComponent,
+    FooterComponent,
+    LoginComponent,
+    NavbarComponent,
     FooterComponent
   ],
   imports: [
@@ -29,7 +35,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

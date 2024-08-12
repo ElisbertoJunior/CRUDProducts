@@ -17,9 +17,11 @@ namespace ProductAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            
-
             // Configurando Serilog
+            /*
+                Configurei este projeto para gerar arquivos de logs, sei que no nosso aqui nao tem 
+                necessidade mas achei valido mostrar que tenho essa protica com meus projetos em producao        
+            */
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console()
                 .WriteTo.File("Logs/myapp-.log", rollingInterval: RollingInterval.Day)
@@ -28,7 +30,6 @@ namespace ProductAPI
             builder.Host.UseSerilog();
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -72,15 +73,15 @@ namespace ProductAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Products.api", Version = "v1" });
             });
 
-            // Inje��o de depend�ncia para os reposit�rios
+            // Injecao de dependencia para os repositorios
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
-            // Inje��o de depend�ncia para os servi�os
+            // Injecao de dependencia para os serviços
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
-           
+            //Configura a Autenticacao
             builder.Services.AddAuthentication("ApiKeyScheme")
                 .AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>("ApiKeyScheme", option => {});
 
@@ -90,7 +91,7 @@ namespace ProductAPI
             era que assim que a aplicação iniciar ela crie dinamicamente o banco e as tabelas caso não
             exista porem com apenas uma string de conexão até funcionava, mas em algum momento depois de 2 ou 4 requisições
             por algum motivo a aplicação rachava por não encontrar o banco, então consegui contornar esse problema 
-            criando uma string de conexão para iniciar a aplicação e outra para as requisições.  
+            criando uma string de conexão para iniciar a aplicaçao e outra para as requisições.  
             */
             builder.Services.AddSingleton(sp =>
             {
@@ -130,13 +131,11 @@ namespace ProductAPI
                 return new DatabaseInitializer(connectionString, logger);
             });
 
-            
-
-
+        
             var app = builder.Build();
 
-           
             app.UseSwagger();
+
             app.UseSwaggerUI();
             
             app.UseHttpsRedirection();
@@ -151,7 +150,7 @@ namespace ProductAPI
 
             });
 
-            // Mensagem de apresenta��o ap�s in�ciar a aplica��o
+            // Mensagem de apresentaçao apos iniciar a aplicaçao
             Log.Information("****************************************");
             Log.Information("*    Aplica��o iniciada com sucesso!   *");
             Log.Information("****************************************");
@@ -165,7 +164,6 @@ namespace ProductAPI
             {
                 Log.Error(ex, "Erro ao inicializar o banco de dados.");
             }
-
 
             app.UseCors("ProductPolice");
 
