@@ -17,7 +17,7 @@ export class DepartmentListComponent implements OnInit {
 
   loadDepartment(): void {
     console.log('Carregando departamentos...');
-  this.departmentService.getDepartments().subscribe(departments => {
+    this.departmentService.getDepartments().subscribe(departments => {
     console.log(departments);
     this.departments = departments;
   }, error => {

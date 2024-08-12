@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs';
 
 export interface Product {
@@ -14,7 +14,6 @@ export interface Product {
         code: string;
         description: string;
     }
-
 }
 
 @Injectable({
@@ -23,27 +22,43 @@ export interface Product {
 export class ProductService {
 
   private apiUrl = 'http://localhost:5167/api/Products'
+  private apiKey = "Produtos 123456789"
 
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.apiUrl);
+    const headers = new HttpHeaders({
+      'ApiKey': `${this.apiKey}`
+    })
+    return this.http.get<Product[]>(this.apiUrl, {headers});
   }
 
   getProductById(id: number): Observable<Product> {
-    return this.http.get<Product>(`${this.apiUrl}/${id}`);
+    const headers = new HttpHeaders({
+      'ApiKey': `${this.apiKey}`
+    })
+    return this.http.get<Product>(`${this.apiUrl}/${id}`, {headers});
   }
 
   createProduct(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.apiUrl, product);
+    const headers = new HttpHeaders({
+      'ApiKey': `${this.apiKey}`
+    })
+    return this.http.post<Product>(this.apiUrl, product, {headers});
   }
 
   updateProduct(id: number, product: Product): Observable<void> {
-    return this.http.put<void>(`${this.apiUrl}/${id}`, product);
+    const headers = new HttpHeaders({
+      'ApiKey': `${this.apiKey}`
+    })
+    return this.http.put<void>(`${this.apiUrl}/${id}`, product, {headers});
   }
 
   deleteProduct(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+    const headers = new HttpHeaders({
+      'ApiKey': `${this.apiKey}`
+    })
+    return this.http.delete<void>(`${this.apiUrl}/${id}`, {headers});
   }
 
 }

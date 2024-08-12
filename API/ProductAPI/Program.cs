@@ -8,6 +8,7 @@ using ProductAPI.Repositories.Interfaces;
 using ProductAPI.Services;
 using ProductAPI.Services.Interfaces;
 using Serilog;
+using System.Globalization;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 
@@ -19,12 +20,7 @@ namespace ProductAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Registra a string de conex�o
-            builder.Services.AddSingleton(sp =>
-            {
-                var configuration = sp.GetRequiredService<IConfiguration>();
-                return configuration.GetConnectionString("DefaultConnection");
-            });
+            
 
             // Configurando Serilog
             Log.Logger = new LoggerConfiguration()
@@ -87,35 +83,54 @@ namespace ProductAPI
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
-            
-
+            // Registra a string de conexao
+            /* 
+            Tive que usar duas strings de conexões diferentes, pois um, pois minha intenção 
+            era que assim que a aplicação iniciar ela crie dinamicamente o banco e as tabelas caso não
+            exista porem com apenas uma string de conexão até funcionava, mas em algum momento depois de 2 ou 4 requisições
+            por algum motivo a aplicação rachava por não encontrar o banco, então consegui contornar esse problema 
+            criando uma string de conexão para iniciar a aplicação e outra para as requisições.  
+            */
             builder.Services.AddSingleton(sp =>
             {
                 var configuration = sp.GetRequiredService<IConfiguration>();
                 return configuration.GetConnectionString("DefaultConnection");
             });
 
+
+            builder.Services.AddSingleton(sp =>
+            {
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                return configuration.GetConnectionString("ConnectionRequests");
+            });
+
+            
             builder.Services.AddScoped<IProductRepository>(sp =>
             {
-                var connectionString = sp.GetRequiredService<string>();
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                var connectionString = configuration.GetConnectionString("ConnectionRequests");
                 return new ProductRepository(connectionString);
-            });
+            }); 
 
             builder.Services.AddScoped<IDepartmentRepository>(sp =>
             {
-                var connectionString = sp.GetRequiredService<string>();
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                var connectionString = configuration.GetConnectionString("ConnectionRequests");
                 return new DepartmentRepository(connectionString);
             });
-
 
 
             /// Adiciona o DatabaseInitializer
             builder.Services.AddSingleton(sp =>
             {
-                var connectionString = sp.GetRequiredService<string>();
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
                 var logger = sp.GetRequiredService<ILogger<DatabaseInitializer>>();
                 return new DatabaseInitializer(connectionString, logger);
             });
+
+            builder.Services.AddAuthentication("ApiKeyScheme")
+                .AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>("ApiKeyScheme", option => { });
 
 
             var app = builder.Build();
@@ -204,7 +219,7 @@ namespace ProductAPI
 
         private bool IsApiKeyValid(string apiKey)
         {
-            if (apiKey != "Besouro")
+            if (apiKey != "Produtos 123456789")
             {
                 return false;
             }

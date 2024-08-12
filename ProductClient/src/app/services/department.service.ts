@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface Department {
@@ -14,11 +14,15 @@ export interface Department {
 export class DepartmentService {
 
    private apiUrl = 'http://localhost:5167/api/Department'
+   private apiKey = "Produtos 123456789"
 
   constructor(private http: HttpClient) { }
 
   getDepartments(): Observable<Department[]> {
-    return this.http.get<Department[]>(this.apiUrl);
+    const headers = new HttpHeaders({
+      'ApiKey': `${this.apiKey}`
+    })
+    return this.http.get<Department[]>(this.apiUrl, { headers});
   }
 
 

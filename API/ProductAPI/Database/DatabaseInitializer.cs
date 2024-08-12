@@ -24,13 +24,13 @@ namespace ProductAPI.Database
                     connection.Open();
 
                     //Cria banco de dados caso não exista
-                    var criateDatabaseQuery = "CREATE DATABASE IF NOT EXISTS ECommerceDB;";
+                    var criateDatabaseQuery = "CREATE DATABASE IF NOT EXISTS ProductDB;";
                     using (var command = new MySqlCommand(criateDatabaseQuery, connection))
                     {
                         command.ExecuteNonQuery();
                     }
 
-                    connection.ChangeDatabase("ECommerceDB");
+                    connection.ChangeDatabase("ProductDB");
 
                     // Cria a tabela Departament caso não exista
                     var creatDepartmentTableQuery = @"

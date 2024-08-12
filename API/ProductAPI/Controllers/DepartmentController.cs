@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductAPI.Services.Interfaces;
 
 
@@ -17,6 +18,7 @@ namespace ProductAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult Get()
         {
             var departments = _departmentService.GetAll();
