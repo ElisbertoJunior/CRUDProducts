@@ -1,6 +1,4 @@
 
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using ProductAPI.Database;
 using ProductAPI.Repositories;
@@ -8,9 +6,8 @@ using ProductAPI.Repositories.Interfaces;
 using ProductAPI.Services;
 using ProductAPI.Services.Interfaces;
 using Serilog;
-using System.Globalization;
-using System.Security.Claims;
-using System.Text.Encodings.Web;
+using ProductAPI.Auth;
+
 
 namespace ProductAPI
 {
@@ -83,6 +80,10 @@ namespace ProductAPI
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
+           
+            builder.Services.AddAuthentication("ApiKeyScheme")
+                .AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>("ApiKeyScheme", option => {});
+
             // Registra a string de conexao
             /* 
             Tive que usar duas strings de conexões diferentes, pois um, pois minha intenção 
@@ -129,8 +130,7 @@ namespace ProductAPI
                 return new DatabaseInitializer(connectionString, logger);
             });
 
-            builder.Services.AddAuthentication("ApiKeyScheme")
-                .AddScheme<ApiKeyAuthenticationOptions, ApiKeyAuthenticationHandler>("ApiKeyScheme", option => { });
+            
 
 
             var app = builder.Build();
@@ -145,9 +145,9 @@ namespace ProductAPI
 
             app.Use(async (context, next) =>
             {
-                Log.Information("Handling request: " + context.Request.Method + " " + context.Request.Path);
+                Log.Information("Tratamento de solicitaçao: " + context.Request.Method + " " + context.Request.Path);
                 await next.Invoke();
-                Log.Information("Finished handling request.");
+                Log.Information("Solicitação de tratamento concluida.");
 
             });
 
@@ -175,63 +175,5 @@ namespace ProductAPI
         }
     }
 
-    public class ApiKeyAuthenticationHandler : AuthenticationHandler<ApiKeyAuthenticationOptions>
-    {
-        public ApiKeyAuthenticationHandler(IOptionsMonitor<ApiKeyAuthenticationOptions> options,
-                                           ILoggerFactory logger,
-                                           UrlEncoder encoder,
-                                           ISystemClock clock)
-            : base(options, logger, encoder, clock)
-        {
-        }
-
-        protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
-        {
-            if (!Request.Headers.ContainsKey("ApiKey"))
-            {
-                return AuthenticateResult.Fail("API key is missing");
-            }
-
-            var apiKey = Request.Headers["ApiKey"];
-
-            if (string.IsNullOrEmpty(apiKey))
-            {
-                return AuthenticateResult.Fail("API key is missing");
-            }
-
-            if (!IsApiKeyValid(apiKey))
-            {
-                return AuthenticateResult.Fail("Invalid API key");
-            }
-
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.Name, "ApiKeyUser")
-                
-            };
-
-            var identity = new ClaimsIdentity(claims, Scheme.Name);
-            var principal = new ClaimsPrincipal(identity);
-            var ticket = new AuthenticationTicket(principal, Scheme.Name);
-
-            return AuthenticateResult.Success(ticket);
-        }
-
-        private bool IsApiKeyValid(string apiKey)
-        {
-            if (apiKey != "Produtos 123456789")
-            {
-                return false;
-            }
-
-            return true;
-        }
-    }
-
-    public class ApiKeyAuthenticationOptions : AuthenticationSchemeOptions
-    {
-        public const string DefaultScheme = "ApiKeyScheme";
-        public string Scheme => DefaultScheme;
-        public string AuthenticationType = DefaultScheme;
-    }
+   
 }
