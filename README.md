@@ -30,6 +30,7 @@ Clone o repositório:
 - Dentro da pasta API voce encontrara a as pastas
    * ProductAPI
    * ProductTests
+   
    ![Imagem](ProductClient/images/pastaapi.png)
 
 - Dentro de ProductAPI navegue até o arquivo appsettings.json e configure as duas strings 
@@ -92,6 +93,7 @@ console seguido de "/swagger/index.html"
 npm install
 ```
 - E confira se a pasta node_modules foi criada:
+
 ![Imagem](ProductClient/images/nodemodules.png)
 
 - Com node_modules criada e todas as dependências instaladas basta seguir para os testes e execução 
