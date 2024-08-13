@@ -1,9 +1,9 @@
 # CRUD Produtos
 
-## Tecnologias usadas
+## Tecnologias do projeto
 
 - [.NET SDK](https://dotnet.microsoft.com/download) (versão 8.0)
-- [Node.js](https://nodejs.org/) 
+- [Node.js](https://nodejs.org/) (A partir da versao 14)
 - [Angular CLI](https://angular.io/cli) (Versao 16)
 - [MySQL](https://www.mysql.com/downloads/) (Versao 8)
 
