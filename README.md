@@ -1,10 +1,6 @@
 # CRUD Produtos
 
-<<<<<<< HEAD
 ## Tecnologias
-=======
-## Tecnologias do projeto
->>>>>>> ba6f70cc64962c2830f259bfd3d7b87a96db8e05
 
 - [.NET SDK](https://dotnet.microsoft.com/download) (versão 8.0)
 - [Node.js](https://nodejs.org/) (A partir da versao 14)
@@ -87,7 +83,6 @@ console seguido de "/swagger/index.html"
 - Os endpoints da API possuem uma ApiKey que deve ser inserida no icone Authorize do Swagger
 ### ApiKey: Produtos 123456789
 ![API KEY](ProductClient/images/apikey.png)
-<<<<<<< HEAD
 
 ### Frontend (Angular 16)
 
@@ -136,5 +131,3 @@ Como parte do processo de seleção para uma posição de analista de sistemas C
 Os conceitos de arquitetura MVC, bem como boas práticas de programação e estruturação de projetos, foram aplicados durante o processo de desenvolvimento. Além disso, a aplicação tem uma interface amigável que facilita a interação do usuário.
 
 Duvidas, sugestões ou criticas estou à disposição!
-=======
->>>>>>> ba6f70cc64962c2830f259bfd3d7b87a96db8e05
