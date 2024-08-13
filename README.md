@@ -34,7 +34,6 @@ Clone o repositório:
 - Dentro da pasta API voce encontrara a as pastas
    * ProductAPI
    * ProductTests
-     
    ![Imagem](ProductClient/images/pastaapi.png)
 
 - Dentro de ProductAPI navegue até o arquivo appsettings.json e configure as duas strings 
