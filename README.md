@@ -43,7 +43,6 @@ de conexão conforme o local e as credenciais do seu MySQL
 }
 
 ``` 
-```
 
 
 * Não e necessário criar o banco ProductDB antes de rodar a aplicação, ela está configurada para criar o banco automaticamente
