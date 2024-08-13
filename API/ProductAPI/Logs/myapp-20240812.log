@@ -3679,3 +3679,26 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
 2024-08-12 20:20:06.340 -03:00 [INF] Solicitação de tratamento concluida.
 2024-08-12 20:20:06.340 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/api/Products - 200 null application/json; charset=utf-8 9.2702ms
 2024-08-12 20:20:50.657 -03:00 [INF] Application is shutting down...
+2024-08-12 23:38:02.529 -03:00 [INF] ****************************************
+2024-08-12 23:38:02.563 -03:00 [INF] *    Aplica��o iniciada com sucesso!   *
+2024-08-12 23:38:02.564 -03:00 [INF] ****************************************
+2024-08-12 23:38:02.801 -03:00 [INF] Banco de dados e tabelas criadas com sucesso.
+2024-08-12 23:38:02.917 -03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-12 23:38:03.042 -03:00 [INF] Now listening on: http://localhost:5167
+2024-08-12 23:38:03.043 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-12 23:38:03.044 -03:00 [INF] Hosting environment: Development
+2024-08-12 23:38:03.044 -03:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\CRUD Produtos\API\ProductAPI
+2024-08-12 23:41:34.902 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/v1/swagger.json - null null
+2024-08-12 23:41:34.919 -03:00 [INF] ApiKeyScheme was not authenticated. Failure message: API key is missing
+2024-08-12 23:41:34.990 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.9603ms
+2024-08-12 23:42:26.828 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/swagger/v1/swagger.json - null null
+2024-08-12 23:42:26.831 -03:00 [INF] ApiKeyScheme was not authenticated. Failure message: API key is missing
+2024-08-12 23:42:26.833 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.2455ms
+2024-08-12 23:42:26.907 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5167/favicon.ico - null null
+2024-08-12 23:42:26.910 -03:00 [INF] ApiKeyScheme was not authenticated. Failure message: API key is missing
+2024-08-12 23:42:26.914 -03:00 [WRN] Failed to determine the https port for redirect.
+2024-08-12 23:42:26.915 -03:00 [INF] Tratamento de solicitaçao: GET /favicon.ico
+2024-08-12 23:42:26.916 -03:00 [INF] Solicitação de tratamento concluida.
+2024-08-12 23:42:26.917 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5167/favicon.ico - 404 0 null 9.6418ms
+2024-08-12 23:42:26.921 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5167/favicon.ico, Response status code: 404
+2024-08-12 23:56:13.105 -03:00 [INF] Application is shutting down...
