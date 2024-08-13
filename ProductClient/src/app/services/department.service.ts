@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environments';
 
 export interface Department {
   id: number;
@@ -13,8 +14,8 @@ export interface Department {
 })
 export class DepartmentService {
 
-   private apiUrl = 'http://localhost:5167/api/Department'
-   private apiKey = "Produtos 123456789"
+   private apiUrl = environment.connection.departmentEndpoint;
+   private apiKey = environment.connection.apiKey;
 
   constructor(private http: HttpClient) { }
 
